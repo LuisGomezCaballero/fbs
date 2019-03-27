@@ -3,3 +3,10 @@ jdk: oraclejdk8
 cache:
   directories:
   - $HOME/.m2
+deploy:
+  provider: heroku
+  api_key:
+    secure: 58c04a8a-2e3b-4102-a50a-cca1f58c3783
+  app: lgc-fbs
+  on:
+    repo: luisgomezcaballero/fbs
